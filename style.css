@@ -1,0 +1,77 @@
+/* General Reset */
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-color: #222;
+    color: #eee;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header with Gradient Text Logo */
+header {
+    padding: 20px;
+    background-color: #111;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    background: linear-gradient(to right, #ccc, #fff, #ccc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Navigation Bar */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+.btn {
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: 2px solid #888;
+    transition: 0.3s;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.btn:hover {
+    background: #fff;
+    color: #222;
+    border-color: #fff;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    .btn {
+        display: block;
+        margin: 5px 0;
+    }
+}
